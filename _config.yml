@@ -19,3 +19,5 @@ exclude:
   - README.md
 baseurl: https://microsoft.github.io/prose
 Title: Microsoft Program Synthesis using Examples SDK
+
+theme: jekyll-theme-cayman
