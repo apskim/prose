@@ -4,16 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C7FC4D3C-3CAE-42B9-AFF9-83CB07A7872F}</ProjectGuid>
+    <ProjectGuid>{9DB7BC54-174E-4480-99E4-A2E4C5677C6E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProseSample</RootNamespace>
-    <AssemblyName>ProseSample</AssemblyName>
+    <RootNamespace>Split.Text</RootNamespace>
+    <AssemblyName>Split.Text</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -36,250 +34,229 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr4.Runtime, Version=4.5.0.0, Culture=neutral, PublicKeyToken=09abb75b9ed49849">
-      <HintPath>..\..\packages\Antlr4.Runtime.4.5.3\lib\net45\Antlr4.Runtime.dll</HintPath>
+      <HintPath>..\packages\Antlr4.Runtime.4.5.3\lib\net45\Antlr4.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.CodeAnalysis.Common.1.3.2\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.3.0\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.3.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.CodeAnalysis.CSharp.1.3.2\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.3.0\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Compiler, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Compiler.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Compiler.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Compound.Extraction.Field, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Compound.Extraction.Field.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Compound.Extraction.Field.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Compound.Split, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Compound.Split.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Compound.Split.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Conditionals, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Conditionals.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Conditionals.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Conditionals.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Conditionals.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.CoreFxLab, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.CoreFxLab.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.CoreFxLab.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Json, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Json.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Json.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Json.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Json.Translation.Python, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Translation.Python.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Json.Translation.Python.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Text, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Text.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Text.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Extraction.Text.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Extraction.Text.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Matching.Text, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Matching.Text.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Matching.Text.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Matching.Text.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Matching.Text.Translation.Python, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Translation.Python.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Matching.Text.Translation.Python.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Paraphrasing, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Paraphrasing.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Paraphrasing.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.File, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.File.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.File.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.File.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.File.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.Text, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.Text.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.Text.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.Text.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Split.Text.Translation.Python, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Translation.Python.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Split.Text.Translation.Python.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Json, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Json.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Json.Learning, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.Learning.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.Learning.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Json.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Json.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Text, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Text.Language, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.Language.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.Language.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Text.Semantics, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.Semantics.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.Semantics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Transformation.Text.Translation.Python, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.Translation.Python.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Transformation.Text.Translation.Python.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Translation, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Translation.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Translation.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Translation.Python, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Translation.Python.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Translation.Python.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Translation.R, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Translation.R.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Translation.R.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Utils, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Utils.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Utils.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Wrangling, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Wrangling.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Wrangling.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Wrangling.Json, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Wrangling.Json.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Wrangling.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.ProgramSynthesis.Wrangling.Translation.Python, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
-      <HintPath>..\..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Wrangling.Translation.Python.dll</HintPath>
+      <HintPath>..\packages\Microsoft.ProgramSynthesis.1.0.3\lib\net45\Microsoft.ProgramSynthesis.Wrangling.Translation.Python.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Collections.Immutable, Version=1.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>..\..\packages\System.Collections.Immutable.1.3.1\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="System.Composition.AttributedModel, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>..\..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Composition.Convention, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>..\..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Composition.Hosting, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>..\..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Composition.Runtime, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>..\..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Composition.TypedParts, Version=1.0.30.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>..\..\packages\Microsoft.Composition.1.0.30\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+    <Reference Include="System.Collections.Immutable, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Collections.Immutable.1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="System.Interactive, Version=3.0.1000.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263">
-      <HintPath>..\..\packages\System.Interactive.3.1.1\lib\net45\System.Interactive.dll</HintPath>
+    <Reference Include="System.Interactive, Version=3.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263">
+      <HintPath>..\packages\System.Interactive.3.0.0\lib\net45\System.Interactive.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Reflection.Metadata, Version=1.4.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <HintPath>..\..\packages\System.Reflection.Metadata.1.4.2\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    <Reference Include="System.Reflection.Metadata, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>..\packages\System.Reflection.Metadata.1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml.Linq" />
@@ -292,39 +269,14 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\benchmarks\emails.tsv">
-      <Link>benchmarks\emails.tsv</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\benchmarks\countries.txt">
-      <Link>benchmarks\countries.txt</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="..\benchmarks\popl13-erc.txt">
-      <Link>benchmarks\popl13-erc.txt</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProseSample.Substrings\ProseSample.Substrings.csproj">
-      <Project>{41e9a9b1-b013-4a87-9759-e3004fef8a81}</Project>
-      <Name>ProseSample.Substrings</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ProseSample.TextExtraction\ProseSample.TextExtraction.csproj">
-      <Project>{5aa217f9-deab-46be-81be-afd00948ac50}</Project>
-      <Name>ProseSample.TextExtraction</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
-    <Analyzer Include="..\..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
